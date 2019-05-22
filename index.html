@@ -88,19 +88,12 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__wrapper slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-            <div class="reviews__toggles slider__toggles">
-              <button class="slider__toggle">1</button>
-              <button class="slider__toggle">2</button>
-              <button class="slider__toggle">3</button>
-            </div>
-          </div>
-        </div>
+        <button class="reviews__toggle reviews__toggle--left">Влево</button>
+          <blockquote class="reviews__item">
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <cite class="reviews__author-name"><b class="author-name__name">Николай Петров</b> <br>25 лет, водитель трамвая</cite>
+          </blockquote>
+          <button class="reviews__toggle reviews__toggle--right">Вправо</button>
       </section>		
 
       <section class="prices">
@@ -108,78 +101,90 @@
         <table class="prices__list">
           <tr>
             <td class="prices__hidden"></td>
-            <th class="prices__base">База
-              <i class="prices__price">1,99 USD</i>
+            <th class="prices__main">
+              <p class="prices__headline">База</p>
+              <p class="prices__price">1,99 USD</p>
             </th>
-            <th class="prices__standard prices__hit">Стандарт
-              <i class="prices__price">3,99 USD</i>
+            <th class="prices__main prices__hit">
+              <p class="prices__headline">Стандарт</p>
+              <p class="prices__price">3,99 USD</p>
             </th>
-            <th class="prices__no-limit">Анлим
-              <i class="prices__price">9,99 USD</i>
+            <th class="prices__main ">
+              <p class="prices__headline">Анлим</p>
+              <p class="prices__price">9,99 USD</p>
             </th>
           </tr>
           <tr>
-            <td class="prices__pink-filter">Розовый фильтр</td>
-            <td class="prices__value">y</td>
-            <td class="prices__value">y</td>
-            <td class="prices__value">y</td>
+            <td class="prices__settings prices__pink-filter">Розовый фильтр</td>
+            <td class="prices__value prices__value--y">y</td>
+            <td class="prices__value prices__value--y">y</td>
+            <td class="prices__value prices__value--y">y</td>
           </tr>
           <tr>
-            <td class="prices__smiles">Смайлики</td>
-            <td class="prices__value">n</td>
-            <td class="prices__value">y</td>
-            <td class="prices__value">y</td>
+            <td class="prices__settings prices__smiles">Смайлики</td>
+            <td class="prices__value prices__value--n">n</td>
+            <td class="prices__value prices__value--y">y</td>
+            <td class="prices__value prices__value--y">y</td>
           </tr>
           <tr>
-            <td class="prices__comments">Комментарии</td>
-            <td class="prices__value">n</td>
-            <td class="prices__value">n</td>
-            <td class="prices__value">y</td>
+            <td class="prices__settings prices__comments">Комментарии</td>
+            <td class="prices__value prices__value--n">n</td>
+            <td class="prices__value prices__value--n">n</td>
+            <td class="prices__value prices__value--y">y</td>
           </tr>
         </table>
-        <div class="prices__toggles slider__toggles">
+        <!-- <div class="prices__toggles slider__toggles">
           <button class="slider__toggle">1</button>
           <button class="slider__toggle">2</button>
           <button class="slider__toggle">3</button>
-        </div>
+        </div> -->
 
       </section>	
 
     </main>
 
     <footer class="page-footer">
-      <strong class="page-footer__slogan">Остались вопросы? Свяжитесь с нами!</strong>
-      <ul class="page-footer__contacts contacts">
-        <li class="contacts__phone">
-          <b>Звоните:</b>
-          <a>+7 (812) 55-66-66</a>
-        </li>
-        <li class="contacts__address">
-          <b>Приезжайте в гости:</b>
-          <a>ул. Большая Конюшенная, 19/8</a>
-        </li>
-        <li class="contacts__email">
-          <b>Пишите:</b>
-          <a>mail@htmlacademy.ru</a>
-        </li>
-      </ul>
+      
+      <div class="contacts__container">
+        <strong class="page-footer__slogan">Остались вопросы? Свяжитесь с нами!</strong>
+        <ul class="page-footer__contacts contacts">
+          <li class="contacts__item">
+            <b class="contacts__variable">Звоните:</b>
+            <a class="contacts__value">+7 (812) 55-66-66</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__variable contacts__variable--adress">Приезжайте в гости:</b>
+            <a class="contacts__value">ул. Большая<br> Конюшенная, 19/8</a>
+          </li>
+          <li class="contacts__item">
+            <b class="contacts__variable">Пишите:</b>
+            <a class="contacts__value">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </div>
       <div class="page-footer__map">
-        <img src="" alt="Карта">
+        
       </div>
-      <div class="page-footer__logo logo">
-        <img src="" alt="logo">
+      
+      <div class="social__container">        
+        <a class="page-footer__logo logo">
+          <img src="img/logo-footer.png" alt="logo">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter">twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook">facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube">youtube</a>
+          </li>
+        </ul>
+        <div class="social__signature">
+          Разработано
+        </div>
       </div>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--twitter">twitter</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook">facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube">youtube</a>
-        </li>
-      </ul>
     </footer>
 
   </body>
