@@ -29,8 +29,8 @@ function watch() {
         tunnel: true
     });
 	gulp.watch('./less/**/*.less', styles);
-	gulp.watch('./*.html', browserSync.reload);
 	gulp.watch('./less/**/*.less', browserSync.reload);
+	gulp.watch('./*.html', browserSync.reload);
 }
 
 gulp.task('styles', styles);
